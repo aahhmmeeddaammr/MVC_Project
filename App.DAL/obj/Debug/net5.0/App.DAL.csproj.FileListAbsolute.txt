@@ -1,0 +1,12 @@
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\bin\Debug\net5.0\App.DAL.deps.json
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\bin\Debug\net5.0\App.DAL.dll
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\bin\Debug\net5.0\App.DAL.pdb
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.AssemblyInfo.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.dll
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\refint\App.DAL.dll
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.pdb
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\ref\App.DAL.dll
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.csproj.AssemblyReference.cache
