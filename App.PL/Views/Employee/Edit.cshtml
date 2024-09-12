@@ -1,0 +1,13 @@
+﻿
+
+@model Employee;
+@{
+    ViewData["Title"] = "Create";
+}
+<h1 class="my-3 text-center">Employee Data</h1>
+
+<form asp-action="Edit" asp-route-id="@Model.ID" >
+      <partial name="Partial/_EmployeeEditCreatePartialView"></partial>
+     <a  class="btn btn-danger text-white" asp-action="Index">Cancel</a>
+     <input type="submit" class="btn btn-dark text-white" value="Update"/>
+</form>

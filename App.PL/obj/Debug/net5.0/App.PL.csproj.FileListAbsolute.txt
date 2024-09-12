@@ -443,3 +443,12 @@ C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Department\Details.cshtml.g.cs
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Department\Delete.cshtml.g.cs
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Department\Create.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Index.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Details.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Create.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Delete.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Shared\_ButtonsPartial.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Partial\_EmployeeEditCreatePartialView.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Employee\Partial\_EmployeeDeleteDetailsPartialView.cshtml.g.cs
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\obj\Debug\net5.0\Razor\Views\Department\Partial\_DepartmentDetailsDeletePartialView.cshtml.g.cs

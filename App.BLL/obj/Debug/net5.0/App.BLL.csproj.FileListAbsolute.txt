@@ -13,3 +13,4 @@ C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.BLL\obj\Debug\net
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.BLL\obj\Debug\net5.0\refint\App.BLL.dll
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.BLL\obj\Debug\net5.0\App.BLL.pdb
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.BLL\obj\Debug\net5.0\ref\App.BLL.dll
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.BLL\obj\Debug\net5.0\App.BLL.sourcelink.json

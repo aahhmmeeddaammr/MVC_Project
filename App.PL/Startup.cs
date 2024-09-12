@@ -24,6 +24,7 @@ namespace App.PL
 		{
 			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defult")));
 			services.AddScoped<IDepartmentRepository,DepartmentRepository>();
+			services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 			services.AddControllersWithViews();
 		}
 

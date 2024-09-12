@@ -10,3 +10,4 @@ C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.pdb
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\ref\App.DAL.dll
 C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.DAL\obj\Debug\net5.0\App.DAL.sourcelink.json

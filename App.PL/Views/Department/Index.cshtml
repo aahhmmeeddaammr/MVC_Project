@@ -30,11 +30,9 @@ else
 								<td>@department.ID</td>
 								<td>@department.Name</td>
 								<td>@department.Code</td>
-												<td>@department.DateOfCreation.Year / @department.DateOfCreation.Month / @department.DateOfCreation.Day at @department.DateOfCreation.Hour :@department.DateOfCreation.Minute :@department.DateOfCreation.Second</td>
-								<td> <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@department.ID">Delete</a> </td>
-								<td> <a class="btn btn-info text-white " asp-action="Edit" asp-route-id="@department.ID">Update</a> </td>
-								<td> <a class="btn btn-primary text-white " asp-action="Details" asp-route-id="@department.ID">Details</a> </td>
-							</tr>
+									<td>@department.DateOfCreation.Year / @department.DateOfCreation.Month / @department.DateOfCreation.Day at @department.DateOfCreation.Hour :@department.DateOfCreation.Minute :@department.DateOfCreation.Second</td>
+							<partial name="_ButtonsPartial" model="@department.ID"></partial>
+		</tr>
 			}
 		</tbody>
 

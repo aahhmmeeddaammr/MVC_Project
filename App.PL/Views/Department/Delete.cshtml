@@ -8,14 +8,7 @@
 </div>
 <form asp-action="Delete" >
 <div >
-    <label asp-for="ID">Name:</label>
-    <input class="form-control my-3" type="type" asp-for="ID"  readonly />
-    <label asp-for="Name">Name:</label>
-    <input class="form-control my-3" type="type" asp-for="Name"  readonly />
-    <label asp-for="Code">Code:</label>
-    <input class="form-control my-3" type="type" asp-for="Code"readonly />
-    <label asp-for="Name">Date Of Creation:</label>
-    <input class="form-control my-3" asp-for="DateOfCreation"  readonly/>
+   <partial name="Partial/_DepartmentDetailsDeletePartialView"></partial>
     <a  class="btn btn-dark text-white" asp-action="Index">Cancel</a>
     <input type="submit" class="btn btn-danger text-white" value="Delete"></input>
 </div>    

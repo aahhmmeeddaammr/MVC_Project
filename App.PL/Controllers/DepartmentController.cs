@@ -50,7 +50,6 @@ namespace App.PL.Controllers
                     ModelState.AddModelError(string.Empty, "There is error occured during ubdate ");
                 }
                 return View(newD);
-                return View(newD);
 			}
 		}
 		#endregion

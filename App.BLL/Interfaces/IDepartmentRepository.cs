@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 using App.DAL.Models;
 namespace App.BLL.Interfaces
 {
-	public interface IDepartmentRepository
+	public interface IDepartmentRepository:IGenericRepository<Department>
 	{
-		public IEnumerable<Department> GetAll();
-		public Department GetByID(int id);
-		public int Delete(Department department);
-		public int Add(Department department);
-		public int Update(Department department);
+
 	}
 }

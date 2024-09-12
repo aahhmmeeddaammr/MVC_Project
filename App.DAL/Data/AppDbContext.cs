@@ -19,5 +19,6 @@ namespace App.DAL.Data
 			modelBuilder.ApplyConfigurationsFromAssembly(System.Reflection.Assembly.GetExecutingAssembly());
 		}
         public DbSet<Department> departments  { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
