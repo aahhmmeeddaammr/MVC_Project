@@ -10,7 +10,11 @@
 }
 else
 {
-					<h1 class="my-3 text-center">All Employees</h1>
+	<form asp-action="Index" >
+		<input  type="text" class="form-control my-4" id="input" name="name" />
+		<input type="submit" value="submit" class="btn btn-danger"/>
+	</form>
+<h1 class="my-3 text-center">All Employees</h1>
 
 				<table class="table table-bordered table-striped text-center">
 				<thead class="bg-dark text-white">
@@ -20,6 +24,7 @@ else
 						<th>@Html.DisplayNameFor(e => e.Address)</th>
 						<th>@Html.DisplayNameFor(e => e.CreationDate)</th>
 						<th>@Html.DisplayNameFor(e => e.IsActive)</th>
+						<th>@Html.DisplayNameFor(e => e.Department)</th>
 						<th>@Html.DisplayNameFor(e => e.Age)</th>
 						<th>Delete</th>
 						<th>Update</th>
@@ -46,6 +51,7 @@ else
 
 						}
 											</td>
+											<td>@employee.Department?.Name	</td>
 									<td>@employee.Age</td>
 									<partial name="_ButtonsPartial" model="@employee.ID"></partial>
 								</tr>

@@ -1,5 +1,6 @@
 ﻿using App.BLL.Interfaces;
 using App.DAL.Models;
+using App.PL.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
@@ -12,7 +13,7 @@ namespace App.PL.Controllers
 		private readonly IDepartmentRepository departmentRepository;
 		private readonly IWebHostEnvironment _env;
 
-		public DepartmentController(IDepartmentRepository departmentRepository , IWebHostEnvironment env) {
+		public DepartmentController(IDepartmentRepository departmentRepository , IWebHostEnvironment env ) {
 			this.departmentRepository = departmentRepository;
 			_env = env;
 		}

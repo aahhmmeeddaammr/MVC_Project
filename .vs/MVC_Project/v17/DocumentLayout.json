@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\employee\\partial\\_employeedeletedetailspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\employee\\partial\\_employeedeletedetailspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\controllers\\employeecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\controllers\\employeecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\employee\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\employee\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\department\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\department\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\department\\partial\\_departmentdetailsdeletepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\department\\partial\\_departmentdetailsdeletepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\views\\department\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\views\\department\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,60 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 286,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_EmployeeDeleteDetailsPartialView.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Partial\\_EmployeeDeleteDetailsPartialView.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Employee\\Partial\\_EmployeeDeleteDetailsPartialView.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Partial\\_EmployeeDeleteDetailsPartialView.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Employee\\Partial\\_EmployeeDeleteDetailsPartialView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:37:27.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Delete.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Employee\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Delete.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Employee\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:37:13.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Details.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Employee\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Details.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Employee\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:36:42.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Details.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Department\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Details.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Department\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:34:49.206Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
@@ -110,41 +46,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Delete.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Department\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Delete.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Department\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "App.PL\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "App.PL\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:34:03.463Z",
+              "WhenOpened": "2024-09-17T20:49:18.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Create.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Department\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Create.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Department\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:33:34.842Z",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController1.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\EmployeeController1.cs",
+              "RelativeDocumentMoniker": "App.PL\\Controllers\\EmployeeController1.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\EmployeeController1.cs",
+              "RelativeToolTip": "App.PL\\Controllers\\EmployeeController1.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAnwLEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:47:33.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_DepartmentDetailsDeletePartialView.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Partial\\_DepartmentDetailsDeletePartialView.cshtml",
-              "RelativeDocumentMoniker": "App.PL\\Views\\Department\\Partial\\_DepartmentDetailsDeletePartialView.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Views\\Department\\Partial\\_DepartmentDetailsDeletePartialView.cshtml",
-              "RelativeToolTip": "App.PL\\Views\\Department\\Partial\\_DepartmentDetailsDeletePartialView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T20:33:28.571Z",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "App.PL\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "App.PL\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-17T20:47:15.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "App.PL\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "App.PL\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T20:37:54.871Z",
               "EditorCaption": ""
             }
           ]

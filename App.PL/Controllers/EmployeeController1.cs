@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace App.PL.Controllers
 {
@@ -12,11 +14,13 @@ namespace App.PL.Controllers
     {
         private readonly IEmployeeRepository employeeRepository;
         private readonly IWebHostEnvironment _env;
+        private readonly IDepartmentRepository departmentRepository;
 
-        public EmployeeController(IEmployeeRepository employee , IWebHostEnvironment env)
+        public EmployeeController(IEmployeeRepository employee , IWebHostEnvironment env , IDepartmentRepository departmentRepository)
         {
             this.employeeRepository = employee;
             _env = env;
+            this.departmentRepository = departmentRepository;
         }
         [HttpGet]
         public IActionResult Delete(int ? id)
@@ -99,6 +103,7 @@ namespace App.PL.Controllers
         #region Create New Employee
         public IActionResult Create()
         {
+            ViewData["Departments"] = departmentRepository.GetAll();
             return View();
         }
         [AutoValidateAntiforgeryToken]
@@ -154,13 +159,17 @@ namespace App.PL.Controllers
         #endregion
 
         #region Get All Employees
-        public IActionResult Index()
+        public IActionResult Index(string? name)
         {
+            Console.WriteLine("ahmed");
+            if (name == null)
+                return View(employeeRepository.GetAll());
             try
             {
-                var employees = employeeRepository.GetAll();
+                var employees = employeeRepository.GetAllEmployeesByName(name.ToLower());
 
                 return View(employees);
+
             }
             catch (Exception ex)
             {

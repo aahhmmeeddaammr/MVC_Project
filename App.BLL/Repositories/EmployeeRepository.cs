@@ -1,6 +1,7 @@
 ﻿using App.BLL.Interfaces;
 using App.DAL.Data;
 using App.DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,16 @@ namespace App.BLL.Repositories
     {
         public EmployeeRepository(AppDbContext appDbContext) : base(appDbContext)
         {
+             
         }
-    }
+        public new  IEnumerable<Employee> GetAll()
+        {
+            return _AppDbContext.Set<Employee>().Include(Employee=>Employee.Department).AsNoTracking();
+        }
+
+		public IQueryable<Employee> GetAllEmployeesByName(string name)
+		{
+			return _AppDbContext.Set<Employee>().Where(E=>E.Name.ToLower().Contains(name.ToLower()));
+		}
+	}
 }

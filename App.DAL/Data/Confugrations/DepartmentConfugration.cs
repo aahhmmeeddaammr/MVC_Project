@@ -16,7 +16,7 @@ namespace App.DAL.Data.Confugrations
 			builder.Property(e=>e.ID).UseIdentityColumn(1000,10);
 			builder.Property(e => e.Name).IsRequired();
 			builder.Property(e => e.DateOfCreation).HasDefaultValueSql("GETDATE()");
-
+			builder.HasMany(e => e.Employees).WithOne(e => e.Department).HasForeignKey(e => e.DepartmentID).OnDelete(DeleteBehavior.Cascade);
 		}
 	}
 }

@@ -33,8 +33,15 @@ using App.DAL.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\Views\_ViewImports.cshtml"
+using App.BLL.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f", @"/Views/Shared/_ButtonsPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c73250e75cee6b3e1d095af52fa361455bf3fb387357ee90ff7b94b30f20a9eb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"67c3a9c8f2bcb57dc40991682986077035a286a2f8806a828c7c449518d84c8f", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__ButtonsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<int>
     #nullable disable
@@ -70,7 +77,7 @@ using App.DAL.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<td> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f5521", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f5720", async() => {
                 WriteLiteral("Delete");
             }
             );
@@ -102,7 +109,7 @@ using App.DAL.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" </td>\r\n<td> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f7832", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f8031", async() => {
                 WriteLiteral("Update");
             }
             );
@@ -134,7 +141,7 @@ using App.DAL.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" </td>\r\n<td> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f10140", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d87076b6b2e597df282604b541443e5ad4daf56b2c7585ea544376a5c4d1626f10339", async() => {
                 WriteLiteral("Details");
             }
             );

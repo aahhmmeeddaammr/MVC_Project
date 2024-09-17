@@ -33,8 +33,15 @@ using App.DAL.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Ahmed\Desktop\fullstack\ASP.NET\7.MVC\MVC_Project\App.PL\Views\_ViewImports.cshtml"
+using App.BLL.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d323feacbd5dfba509e20278136dbef184961cfbf59e489e7df5cff9b86bb4df", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c73250e75cee6b3e1d095af52fa361455bf3fb387357ee90ff7b94b30f20a9eb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"67c3a9c8f2bcb57dc40991682986077035a286a2f8806a828c7c449518d84c8f", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -75,7 +82,7 @@ using App.DAL.Models;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"text-center \">\r\n    <h1 class=\"display-4 my-4\">Welcome</h1>\r\n     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d323feacbd5dfba509e20278136dbef184961cfbf59e489e7df5cff9b86bb4df4721", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d323feacbd5dfba509e20278136dbef184961cfbf59e489e7df5cff9b86bb4df4920", async() => {
                 WriteLiteral("Show all departments");
             }
             );

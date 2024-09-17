@@ -1,4 +1,9 @@
 ﻿@model Employee;
+@inject IDepartmentRepository _departmentRepository
+@{
+    var Departments = new SelectList(@_departmentRepository.GetAll(), nameof(Department.ID), nameof(Department.Name));
+
+}
 <label asp-for="Name">Name:</label>
      <input class="form-control my-3" type="type" asp-for="Name"   />
 
@@ -18,6 +23,9 @@
      <input class="form-control my-3" type="type" asp-for="Age"   />
 
      <label asp-for="IsActive">Is Active:</label>
-     <input class="form-control my-3" type="type" asp-for="IsActive"   />
+     <input  class="form-control my-3" type="type" asp-for="IsActive"   />
+     <select asp-items="@Departments" class="form-control my-3" asp-for="DepartmentID">
+    <option value="null">--Select Your Department--</option>
+</select>
 
 

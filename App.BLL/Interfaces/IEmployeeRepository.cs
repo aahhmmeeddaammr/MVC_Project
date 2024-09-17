@@ -9,6 +9,6 @@ namespace App.BLL.Interfaces
 {
     public interface IEmployeeRepository : IGenericRepository<Employee>
     {
-
+        public IQueryable<Employee> GetAllEmployeesByName(string name);
     }
 }

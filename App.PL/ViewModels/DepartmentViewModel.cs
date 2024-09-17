@@ -1,18 +1,15 @@
-﻿using System;
+﻿using App.DAL.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
-namespace App.DAL.Models
+namespace App.PL.ViewModels
 {
-	public class Department:ModelBase
+	public class DepartmentViewModel
 	{
 		public string Name { get; set; }
 		public string Code { get; set; }
 		public DateTime DateOfCreation { get; set; }
 
-		//Relation
 		public ICollection<Employee> Employees { get; set; } = new HashSet<Employee>();
-    }
+	}
 }
