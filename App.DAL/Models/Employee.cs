@@ -23,5 +23,7 @@ namespace App.DAL.Models
         //Relatio
         public Department Department { get; set; }
         public int? DepartmentID { get; set; }
+
+        public string ProfileImage { get; set; }
     }
 }

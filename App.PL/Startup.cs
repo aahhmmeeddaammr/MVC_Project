@@ -1,6 +1,7 @@
 using App.BLL.Interfaces;
 using App.BLL.Repositories;
 using App.DAL.Data;
+using App.PL.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,9 +24,9 @@ namespace App.PL
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defult")));
-			services.AddScoped<IDepartmentRepository,DepartmentRepository>();
-			services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 			services.AddControllersWithViews();
+			services.AddAppServices();
+			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

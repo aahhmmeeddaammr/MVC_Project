@@ -23,7 +23,11 @@ namespace App.BLL.Repositories
 
 		public IQueryable<Employee> GetAllEmployeesByName(string name)
 		{
-			return _AppDbContext.Set<Employee>().Where(E=>E.Name.ToLower().Contains(name.ToLower()));
+			return _AppDbContext.Set<Employee>().Include(E=>E.Department).Where(E=>E.Name.ToLower().Contains(name.ToLower()));
+		}
+        public IQueryable<Employee> GetAllEmployeesByDepartment(int Deparmentid)
+		{
+			return _AppDbContext.Set<Employee>().Include(E=>E.Department).Where(E=>E.DepartmentID==Deparmentid);
 		}
 	}
 }

@@ -6,7 +6,8 @@ namespace App.PL.ViewModels
 {
 	public class DepartmentViewModel
 	{
-		public string Name { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
 		public string Code { get; set; }
 		public DateTime DateOfCreation { get; set; }
 

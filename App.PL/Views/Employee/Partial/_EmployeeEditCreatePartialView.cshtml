@@ -1,10 +1,10 @@
-﻿@model Employee;
+﻿@model EmployeeViewModel;
 @inject IDepartmentRepository _departmentRepository
 @{
     var Departments = new SelectList(@_departmentRepository.GetAll(), nameof(Department.ID), nameof(Department.Name));
 
 }
-<label asp-for="Name">Name:</label>
+     <label asp-for="Name">Name:</label>
      <input class="form-control my-3" type="type" asp-for="Name"   />
 
      <label asp-for="Email">Email:</label>
@@ -25,7 +25,10 @@
      <label asp-for="IsActive">Is Active:</label>
      <input  class="form-control my-3" type="type" asp-for="IsActive"   />
      <select asp-items="@Departments" class="form-control my-3" asp-for="DepartmentID">
-    <option value="null">--Select Your Department--</option>
-</select>
+        <option value="null">--Select Your Department--</option>
+    </select>
+    <label asp-for="Image">Profile Image:</label>
+    <input  class="form-control-file"  asp-for="Image"/>
+
 
 

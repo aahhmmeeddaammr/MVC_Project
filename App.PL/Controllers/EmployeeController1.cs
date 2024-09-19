@@ -1,11 +1,12 @@
 ﻿using App.BLL.Interfaces;
 using App.DAL.Data;
 using App.DAL.Models;
+using App.PL.Helpers;
+using App.PL.ViewModels;
+using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace App.PL.Controllers
@@ -15,35 +16,42 @@ namespace App.PL.Controllers
         private readonly IEmployeeRepository employeeRepository;
         private readonly IWebHostEnvironment _env;
         private readonly IDepartmentRepository departmentRepository;
+		private readonly IMapper mapper;
 
-        public EmployeeController(IEmployeeRepository employee , IWebHostEnvironment env , IDepartmentRepository departmentRepository)
+		public EmployeeController(IUnitOfWork unitOfWork, IWebHostEnvironment env  ,IMapper mapper )
         {
-            this.employeeRepository = employee;
+            this.employeeRepository = unitOfWork.employeeRepository;
             _env = env;
-            this.departmentRepository = departmentRepository;
-        }
+            this.departmentRepository = unitOfWork.departmentRepository;
+			this.mapper = mapper;
+		}
+        
+        #region Delete Employee
         [HttpGet]
-        public IActionResult Delete(int ? id)
+        public IActionResult Delete(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return BadRequest();
             }
             var emp = employeeRepository.GetByID(id.Value);
-            if (emp == null)
+            var EmployeeVM = mapper.Map<Employee, EmployeeViewModel>(emp);
+            if (EmployeeVM == null)
             {
                 return NotFound();
             }
-            return View(emp);
+            return View(EmployeeVM);
         }
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public IActionResult Delete([FromRoute] int id, Employee employee)
+        public IActionResult Delete([FromRoute] int id, EmployeeViewModel employee)
         {
 
             try
             {
-                var emp = employeeRepository.Delete(employee);
+                DocumentSettings.DeleteFile(employee.ProfileImage, "ProfileImages");
+                var Employee = mapper.Map<EmployeeViewModel, Employee>(employee);
+                var emp = employeeRepository.Delete(Employee);
                 if (emp == 0)
                 {
                     throw new Exception("Invaild Data");
@@ -60,38 +68,43 @@ namespace App.PL.Controllers
             }
         }
 
+        #endregion
+
         #region Update Employee
         public IActionResult Edit(int? id)
-        {
+         {
             if (id == null)
             {
                 return BadRequest();
             }
 
-            var emp = employeeRepository.GetByID(id.Value);
-            if (emp == null)
-            {
-                return NotFound();
-            }
-            return View(emp);
-        }
+			var emp = employeeRepository.GetByID(id.Value);
+			var EmployeeVM = mapper.Map<Employee, EmployeeViewModel>(emp);
+			if (EmployeeVM == null)
+			{
+				return NotFound();
+			}
+			return View(EmployeeVM);
+		}
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public IActionResult Edit([FromRoute] int id, Employee employee)
+        public IActionResult Edit([FromRoute] int id, EmployeeViewModel employee)
         {
 
             try
             {
-                var emp = employeeRepository.Update(employee);
-                if (emp == 0)
-                {
-                    throw new Exception("Invaild Data");
-                }
-                else
-                {
-                    return RedirectToAction(nameof(Index));
-                }
-            }
+                employee.ProfileImage = DocumentSettings.UploadFile(employee.Image, "ProfileImages");
+                var Employee = mapper.Map<EmployeeViewModel, Employee>(employee);
+				var emp = employeeRepository.Update(Employee);
+				if (emp == 0)
+				{
+					throw new Exception("Invaild Data");
+				}
+				else
+				{
+					return RedirectToAction(nameof(Index));
+				}
+			}
             catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
@@ -108,7 +121,7 @@ namespace App.PL.Controllers
         }
         [AutoValidateAntiforgeryToken]
         [HttpPost]
-        public IActionResult Create(Employee employee)
+        public IActionResult Create(EmployeeViewModel employee)
         {
             if (!ModelState.IsValid)
             {
@@ -116,7 +129,9 @@ namespace App.PL.Controllers
             }
             try
             {
-                int Effected = employeeRepository.Add(employee);
+                employee.ProfileImage = DocumentSettings.UploadFile(employee.Image, "ProfileImages");
+                var Emp = mapper.Map<EmployeeViewModel,Employee>(employee);
+                int Effected = employeeRepository.Add(Emp);
                 if (Effected == 0)
                 {
                     throw new Exception("Invalid Data");
@@ -148,7 +163,8 @@ namespace App.PL.Controllers
             try
             {
                 var emp = employeeRepository.GetByID(id.Value);
-                return View(emp);
+                var MappedEmployee = mapper.Map<Employee, EmployeeViewModel>(emp);
+                return View(MappedEmployee);
             }
             catch (Exception ex)
             {
@@ -159,17 +175,26 @@ namespace App.PL.Controllers
         #endregion
 
         #region Get All Employees
-        public IActionResult Index(string? name)
+        public IActionResult Index(string name , int? DepartmentID)
         {
-            Console.WriteLine("ahmed");
+            if (DepartmentID.HasValue)
+            {
+                var employees = employeeRepository.GetAllEmployeesByDepartment(DepartmentID.Value);
+                var EmployeesViewModel = mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(employees);
+                return View(EmployeesViewModel);
+            }
             if (name == null)
-                return View(employeeRepository.GetAll());
+            {
+				var employees = employeeRepository.GetAll();
+				var EmployeesViewModel = mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(employees);
+				return View(EmployeesViewModel);
+            }
+            
             try
             {
                 var employees = employeeRepository.GetAllEmployeesByName(name.ToLower());
-
-                return View(employees);
-
+                var EmployeesViewModel = mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(employees);
+                return View(EmployeesViewModel);
             }
             catch (Exception ex)
             {

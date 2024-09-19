@@ -1,21 +1,27 @@
 ﻿using App.BLL.Interfaces;
 using App.DAL.Models;
 using App.PL.ViewModels;
+using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Collections.Generic;
 
 namespace App.PL.Controllers
 {
 	public class DepartmentController : Controller
 	{
 		private readonly IDepartmentRepository departmentRepository;
-		private readonly IWebHostEnvironment _env;
+        private readonly IUnitOfWork unitOfWork;
+        private readonly IWebHostEnvironment _env;
+		private readonly IMapper mapper;
 
-		public DepartmentController(IDepartmentRepository departmentRepository , IWebHostEnvironment env ) {
-			this.departmentRepository = departmentRepository;
-			_env = env;
+		public DepartmentController(IUnitOfWork unitOfWork , IWebHostEnvironment env , IMapper mapper ) {
+            this.unitOfWork = unitOfWork;
+			this.departmentRepository = unitOfWork.departmentRepository;
+            _env = env;
+			this.mapper = mapper;
 		}
 
 		#region Create Department
@@ -29,7 +35,7 @@ namespace App.PL.Controllers
 
 		[HttpPost]
 		[AutoValidateAntiforgeryToken]
-		public IActionResult Create(Department newD)
+		public IActionResult Create(DepartmentViewModel newD)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -37,7 +43,8 @@ namespace App.PL.Controllers
 			}
 			try
 			{
-                departmentRepository.Add(newD);
+				var department = mapper.Map<DepartmentViewModel, Department>(newD);
+                departmentRepository.Add(department);
                 return RedirectToAction(nameof(Index));
 			}
 			catch(Exception ex)
@@ -65,11 +72,12 @@ namespace App.PL.Controllers
 				return View("Error");
 			}
 			var Department = departmentRepository.GetByID(id.Value);
-			return View(Department);
+			var DepartmentVM = mapper.Map< Department,DepartmentViewModel> (Department);
+			return View(DepartmentVM);
 		}
 		[HttpPost]
 		[AutoValidateAntiforgeryToken]
-		public IActionResult Edit([FromRoute] int id, Department D)
+		public IActionResult Edit([FromRoute] int id, DepartmentViewModel D)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -81,7 +89,8 @@ namespace App.PL.Controllers
 			}
 			try
 			{
-				departmentRepository.Update(D);
+				var department = mapper.Map<DepartmentViewModel, Department >(D);
+				departmentRepository.Update(department);
 				return RedirectToAction(nameof(Index));
 			}
 			catch (Exception ex)
@@ -108,11 +117,12 @@ namespace App.PL.Controllers
 				return View("Error");
 			}
 			var Department = departmentRepository.GetByID(id.Value);
-			return View(Department);
+			var DepartmentViewModel = mapper.Map<Department , DepartmentViewModel>(Department);
+			return View(DepartmentViewModel);
 		}
 		[HttpPost]
 		[AutoValidateAntiforgeryToken]
-		public IActionResult Delete([FromRoute] int id, Department D)
+		public IActionResult Delete([FromRoute] int id, DepartmentViewModel D)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -124,7 +134,8 @@ namespace App.PL.Controllers
 			}
 			try
 			{
-				departmentRepository.Delete(D);
+				var department = mapper.Map<DepartmentViewModel, Department>(D);
+				departmentRepository.Delete(department);
 				return RedirectToAction(nameof(Index));
 			}
 			catch (Exception ex)
@@ -151,14 +162,16 @@ namespace App.PL.Controllers
 				return View("Error");
 			}
 			var Department = departmentRepository.GetByID(id.Value);
-			return View(Department);
+			var DepartmentVM = mapper.Map<Department,DepartmentViewModel>(Department);
+			return View(DepartmentVM);
 		}
 
 		#endregion
 		public IActionResult Index()
 		{
-			var Departments = this.departmentRepository.GetAll();
-			return View(Departments);
+			var Departments = departmentRepository.GetAll();
+			var DepartmentsVM = mapper.Map< IEnumerable<Department>,  IEnumerable< DepartmentViewModel>> (Departments);
+			return View(DepartmentsVM);
 		}
 	}
 }

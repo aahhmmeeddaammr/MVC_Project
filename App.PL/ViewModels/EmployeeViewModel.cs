@@ -1,12 +1,14 @@
 ﻿using App.DAL.Models;
 using System.ComponentModel.DataAnnotations;
 using System;
+using Microsoft.AspNetCore.Http;
 
 namespace App.PL.ViewModels
 {
 	public class EmployeeViewModel
 	{
-		[Required]
+        public int ID { get; set; }
+        [Required]
 		[MaxLength(50)]
 		public string Name { get; set; }
 		[Range(18, 60, ErrorMessage = "Error")]
@@ -28,5 +30,8 @@ namespace App.PL.ViewModels
 		//Relation
 		public Department Department { get; set; }
 		public int? DepartmentID { get; set; }
-	}
+
+        public string ProfileImage { get; set; }
+		public IFormFile Image { get; set; }
+    }
 }
