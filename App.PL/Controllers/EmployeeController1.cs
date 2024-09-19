@@ -1,4 +1,5 @@
 ﻿using App.BLL.Interfaces;
+using App.BLL.Repositories;
 using App.DAL.Data;
 using App.DAL.Models;
 using App.PL.Helpers;
@@ -14,12 +15,14 @@ namespace App.PL.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository employeeRepository;
+        private readonly IUnitOfWork unitOfWork;
         private readonly IWebHostEnvironment _env;
         private readonly IDepartmentRepository departmentRepository;
 		private readonly IMapper mapper;
 
 		public EmployeeController(IUnitOfWork unitOfWork, IWebHostEnvironment env  ,IMapper mapper )
         {
+            this.unitOfWork = unitOfWork;
             this.employeeRepository = unitOfWork.employeeRepository;
             _env = env;
             this.departmentRepository = unitOfWork.departmentRepository;
@@ -51,7 +54,9 @@ namespace App.PL.Controllers
             {
                 DocumentSettings.DeleteFile(employee.ProfileImage, "ProfileImages");
                 var Employee = mapper.Map<EmployeeViewModel, Employee>(employee);
-                var emp = employeeRepository.Delete(Employee);
+                    employeeRepository.Delete(Employee);
+                var emp = unitOfWork.Complete();
+
                 if (emp == 0)
                 {
                     throw new Exception("Invaild Data");
@@ -80,7 +85,8 @@ namespace App.PL.Controllers
 
 			var emp = employeeRepository.GetByID(id.Value);
 			var EmployeeVM = mapper.Map<Employee, EmployeeViewModel>(emp);
-			if (EmployeeVM == null)
+            unitOfWork.Complete();
+            if (EmployeeVM == null)
 			{
 				return NotFound();
 			}
@@ -95,7 +101,8 @@ namespace App.PL.Controllers
             {
                 employee.ProfileImage = DocumentSettings.UploadFile(employee.Image, "ProfileImages");
                 var Employee = mapper.Map<EmployeeViewModel, Employee>(employee);
-				var emp = employeeRepository.Update(Employee);
+                employeeRepository.Update(Employee);
+				var emp = unitOfWork.Complete();
 				if (emp == 0)
 				{
 					throw new Exception("Invaild Data");
@@ -131,7 +138,8 @@ namespace App.PL.Controllers
             {
                 employee.ProfileImage = DocumentSettings.UploadFile(employee.Image, "ProfileImages");
                 var Emp = mapper.Map<EmployeeViewModel,Employee>(employee);
-                int Effected = employeeRepository.Add(Emp);
+                    employeeRepository.Add(Emp);
+                int Effected = unitOfWork.Complete();
                 if (Effected == 0)
                 {
                     throw new Exception("Invalid Data");

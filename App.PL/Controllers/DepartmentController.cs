@@ -45,6 +45,7 @@ namespace App.PL.Controllers
 			{
 				var department = mapper.Map<DepartmentViewModel, Department>(newD);
                 departmentRepository.Add(department);
+                unitOfWork.Complete();
                 return RedirectToAction(nameof(Index));
 			}
 			catch(Exception ex)
@@ -91,7 +92,8 @@ namespace App.PL.Controllers
 			{
 				var department = mapper.Map<DepartmentViewModel, Department >(D);
 				departmentRepository.Update(department);
-				return RedirectToAction(nameof(Index));
+                unitOfWork.Complete();
+                return RedirectToAction(nameof(Index));
 			}
 			catch (Exception ex)
 			{
@@ -135,7 +137,9 @@ namespace App.PL.Controllers
 			try
 			{
 				var department = mapper.Map<DepartmentViewModel, Department>(D);
-				departmentRepository.Delete(department);
+                unitOfWork.Complete();
+
+                departmentRepository.Delete(department);
 				return RedirectToAction(nameof(Index));
 			}
 			catch (Exception ex)

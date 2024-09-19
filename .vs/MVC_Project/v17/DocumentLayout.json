@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\controllers\\employeecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\controllers\\employeecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|c:\\users\\ahmed\\desktop\\fullstack\\asp.net\\7.mvc\\mvc_project\\app.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B61CA07-27DD-43C7-AA40-C9974CB95A49}|App.PL\\App.PL.csproj|solutionrelative:app.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 286,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController1.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\EmployeeController1.cs",
-              "RelativeDocumentMoniker": "App.PL\\Controllers\\EmployeeController1.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\EmployeeController1.cs",
-              "RelativeToolTip": "App.PL\\Controllers\\EmployeeController1.cs",
-              "ViewState": "AQIAALYAAAAAAAAAAAAiwL4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T20:25:07.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "App.PL\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\fullstack\\ASP.NET\\7.MVC\\MVC_Project\\App.PL\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "App.PL\\Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T20:22:18.122Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"

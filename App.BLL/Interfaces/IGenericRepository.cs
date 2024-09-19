@@ -12,8 +12,8 @@ namespace App.BLL.Interfaces
     {
         public IEnumerable<T> GetAll();
         public T GetByID(int id);
-        public int Delete(T item);
-        public int Add(T item);
-        public int Update(T item);
+        public void Delete(T item);
+        public void Add(T item);
+        public void Update(T item);
     }
 }

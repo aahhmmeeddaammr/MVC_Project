@@ -19,16 +19,16 @@ namespace App.BLL.Repositories
             _AppDbContext = appDbContext;
 
         }
-        public int Add(T item)
+        public void Add(T item)
         {
             _AppDbContext.Add(item);
-            return _AppDbContext.SaveChanges();
+           // return _AppDbContext.SaveChanges();
         }
 
-        public int Delete(T department)
+        public void Delete(T department)
         {
             _AppDbContext.Remove(department);
-            return _AppDbContext.SaveChanges();
+            //return _AppDbContext.SaveChanges();
         }
 
         public IEnumerable<T> GetAll()
@@ -41,10 +41,10 @@ namespace App.BLL.Repositories
             return _AppDbContext.Set<T>().Where(D => D.ID == id).AsNoTracking().FirstOrDefault();
         }
 
-        public int Update(T department)
+        public void Update(T department)
         {
             _AppDbContext.Update(department);
-            return _AppDbContext.SaveChanges();
+           // return _AppDbContext.SaveChanges();
         }
     }
 }

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace App.BLL.Repositories
 {
-	public class DepartmentRepository : GenericRepository<Department> , IDepartmentRepository
+    public class DepartmentRepository : GenericRepository<Department>, IDepartmentRepository
 	{
 		#region Debendancy Injection 
 		public DepartmentRepository(AppDbContext appDbContext):base(appDbContext) 
