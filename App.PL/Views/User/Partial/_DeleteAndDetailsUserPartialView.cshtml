@@ -1,0 +1,14 @@
+﻿@model UserViewModel;
+
+<label asp-for="FullName">Name:</label>
+     <input class="form-control my-3" type="type" asp-for="FullName"   readonly/>
+
+     <label asp-for="Email">Email:</label>
+     <input class="form-control my-3" type="type" asp-for="Email"  readonly />
+
+     <label asp-for="Roles">Department:</label>
+        @foreach(var role in Model.Roles)
+        {
+            <h1>@role.ToString()</h1>
+        }
+@* <input class="form-control my-3" type="type" asp-for="Roles"   readonly/> *@

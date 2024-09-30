@@ -5,6 +5,7 @@ using App.DAL.Models;
 using App.PL.Helpers;
 using App.PL.ViewModels;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ using System.Collections.Generic;
 
 namespace App.PL.Controllers
 {
+	[Authorize]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository employeeRepository;

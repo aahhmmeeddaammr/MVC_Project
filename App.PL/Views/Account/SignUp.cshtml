@@ -1,0 +1,30 @@
+﻿@model SignUpViewModel;
+
+@{
+	ViewData["Title"] = "SignUp";
+	Layout = "_AuthLayout";
+
+	// Layout = "~/Views/Shared/_ValidationScriptsPartial.cshtml";
+}
+
+
+<div class=" d-flex justify-content-center align-items-center p-5  " >
+	<form  asp-action="SingUp" class="w-75 shadow-lg p-5" >
+			<label asp-for="Fname">First Name:</label>		  
+			<input asp-for="Fname" class="form-control "/>
+			
+			<label asp-for="Lname">Last Name:</label>		  
+			<input asp-for="Lname" class="form-control "/>
+			
+			<label asp-for="Email">Email</label>		  
+			<input asp-for="Email" class="form-control "/>
+
+			<label asp-for="Password">Password</label>
+			<input asp-for="Password" class="form-control "/>
+			
+			<label asp-for="ConfirmPassword">Re-Password</label>
+			<input asp-for="ConfirmPassword" class="form-control "/>
+			<p>Do you have Account ? <a asp-action="Login">Signin</a></p>
+			<input type="submit" class="btn btn-info" value="Sign Up" />
+	</form>
+</div>

@@ -31,7 +31,7 @@ else
 								<td>@department.Name</td>
 								<td>@department.Code</td>
 									<td>@department.DateOfCreation.Year / @department.DateOfCreation.Month / @department.DateOfCreation.Day at @department.DateOfCreation.Hour :@department.DateOfCreation.Minute :@department.DateOfCreation.Second</td>
-							<partial name="_ButtonsPartial" model="@department.ID"></partial>
+							<partial name="_ButtonsPartial" model="@department.ID.ToString()"></partial>
 		</tr>
 			}
 		</tbody>

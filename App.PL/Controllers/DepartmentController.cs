@@ -2,6 +2,7 @@
 using App.DAL.Models;
 using App.PL.ViewModels;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +11,8 @@ using System.Collections.Generic;
 
 namespace App.PL.Controllers
 {
+	[Authorize]
+
 	public class DepartmentController : Controller
 	{
 		private readonly IDepartmentRepository departmentRepository;
@@ -137,9 +140,9 @@ namespace App.PL.Controllers
 			try
 			{
 				var department = mapper.Map<DepartmentViewModel, Department>(D);
-                unitOfWork.Complete();
 
                 departmentRepository.Delete(department);
+                unitOfWork.Complete();
 				return RedirectToAction(nameof(Index));
 			}
 			catch (Exception ex)

@@ -53,7 +53,7 @@ else
 											</td>
 											<td>@employee.Department?.Name	</td>
 									<td>@employee.Age</td>
-									<partial name="_ButtonsPartial" model="@employee.ID"></partial>
+									<partial name="_ButtonsPartial" model="@employee.ID.ToString()"></partial>
 								</tr>
 			}
 					</tbody>

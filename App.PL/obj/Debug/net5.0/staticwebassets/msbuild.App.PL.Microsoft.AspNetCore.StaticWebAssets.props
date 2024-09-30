@@ -48,6 +48,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ProfileImages\581e0f97-12b9-4e51-ab80-457c9c860fe5Screenshot 2024-05-20 020810.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ProfileImages\75763e13-cabc-4ba7-8b0c-9f19e878309fScreenshot 2024-07-31 024404.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>App.PL</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/App.PL</BasePath>
+      <RelativePath>Files\ProfileImages\75763e13-cabc-4ba7-8b0c-9f19e878309fScreenshot 2024-07-31 024404.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ProfileImages\75763e13-cabc-4ba7-8b0c-9f19e878309fScreenshot 2024-07-31 024404.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ProfileImages\be56b21f-c20e-4bdc-a495-51fb066b09ceScreenshot 2024-05-13 103726.png))">
       <SourceType>Package</SourceType>
       <SourceId>App.PL</SourceId>

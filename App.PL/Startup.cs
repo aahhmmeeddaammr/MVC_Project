@@ -23,9 +23,9 @@ namespace App.PL
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defult")));
-			services.AddControllersWithViews();
-			services.AddAppServices();
+			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defult")))
+				.AddAppServices()
+				.AddControllersWithViews() ;
 			
 		}
 
@@ -47,6 +47,7 @@ namespace App.PL
 
 			app.UseRouting();
 
+			app.UseAuthentication();
 			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>

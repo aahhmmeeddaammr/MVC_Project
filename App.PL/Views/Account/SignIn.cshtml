@@ -1,0 +1,22 @@
+﻿@model SignInViewModel;
+
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = "_AuthLayout";
+}
+
+<div class=" d-flex justify-content-center align-items-center p-5  " >
+	<form  asp-action="Login" class="w-75 shadow-lg p-5" >
+			<label asp-for="Email">Email</label>		  
+			<input  asp-for="Email" class="form-control "/>
+			<label asp-for="Password">Password</label>
+			<input asp-for="Password" class="form-control "/>
+
+			<div class="d-flex justify-content-between">
+				<p><input type="checkbox" asp-for="Rememberme" /> Remember me?</p>
+				<p>Don't  have Account ? <a asp-action="SignUp">Sign up</a></p>
+			</div>
+			<a asp-action="ForgetPassword">Forget Password?</a>
+			<input type="submit" class="btn btn-info" value="Sign in" />
+	</form>
+</div>

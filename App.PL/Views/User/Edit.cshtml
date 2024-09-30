@@ -1,0 +1,17 @@
+﻿@model UserViewModel;
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<label asp-for="FullName">Name:</label>
+     <input class="form-control my-3" type="type" asp-for="FullName"/>
+
+     <label asp-for="Email">Email:</label>
+     <input class="form-control my-3" type="type" asp-for="Email" />
+
+     <label asp-for="Roles">Department:</label>
+@* <input class="form-control my-3" type="type" asp-for="Roles"   readonly/> *@
